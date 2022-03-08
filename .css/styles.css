@@ -53,3 +53,8 @@ button:hover
 {
     display: none;
 }
+
+#resultado
+{
+    font-size: 25px;
+}

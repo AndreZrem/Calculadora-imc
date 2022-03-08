@@ -64,6 +64,39 @@ function validate()
     }
     else
     {
+        let imc = peso.value / (altura.value * altura.value);
+        const result = document.getElementById('resultado')
         
+        if(imc < 18.5)
+        {
+            console.log('Magreza | Obesidade 0');
+            result.style.color = 'yellow';
+            result.innerHTML = 'Magreza | Obesidade 0';
+        }
+        else if(imc > 18.5 && imc < 25)
+        {
+            console.log('Normal | Obesidade 0');
+            result.style.color = 'green';
+            result.innerHTML = 'Normal | Obesidade 0';
+        }
+        else if(imc > 25 && imc < 30)
+        {
+            console.log('Sobrepeso | Obesidade 1');
+            result.style.color = 'yellow';
+            result.innerHTML = 'Sobrepeso | Obesidade 1';
+        }
+        else if(imc > 30 && imc < 40)
+        {
+            console.log('Obesidade | Obesidade 2');
+            result.style.color = 'darkred';
+            result.innerHTML = 'Obesidade | Obesidade 2';
+        }
+        else 
+        {
+            console.log('Obesidade grave | Obesidade 3');
+            result.style.color = 'red';
+            result.innerHTML = 'Obesidade grave | Obesidade 3';
+        }
+        go(2, 3);
     }
 }
