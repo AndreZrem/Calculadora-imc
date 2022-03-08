@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMC AM</title>
     <link rel="stylesheet" href=".css/styles.css">
+    <script src="./js/script.js" defer></script>
 </head>
 <body>
     <h1>André Menezes</h1>
     <div class="container">
         <div class="first-step">
             <p>Clique no botão para calcular seu imc</p>
-            <button>Iniciar</button>
+            <button onclick="go(1, 2)">Iniciar</button>
         </div>
 
         <div class="second-step">
@@ -24,7 +25,7 @@
             <label for="altura">Digite sua altura</label>
             <input type="number" placeholder="Sua altura" id="altura">
             <br><br>
-            <button>Calcular</button>
+            <button onclick="validate()">Calcular</button>
         </div>
 
         <div class="final-step">

@@ -44,12 +44,12 @@ button:hover
     outline: none;
 }
 
-.first-step
+.second-step
 {
     display: none;
 }
 
-.second-step
+.final-step
 {
     display: none;
 }
